@@ -94,9 +94,7 @@ window.flash = async function(){
         $("prog").value = Math.round((sum / grand) * 100);
       },
     });
-    status("Flash complete. Resetting...");
-    await resetTarget();
-    status("Done. Start the monitor to view output.");
+    status("Flash complete. Start the monitor to view output.");
   } catch (e) {
     status("Flash failed: " + e.message);
   } finally {
@@ -104,14 +102,18 @@ window.flash = async function(){
   }
 };
 
+async function pulseReset(){
+  await device.setSignals({ dataTerminalReady: false, requestToSend: true });
+  await sleep(120);
+  await device.setSignals({ requestToSend: false });
+}
+
 window.resetTarget = async function(){
   if (!device) { status("Not connected."); return; }
   const opened = !device.readable;
   try {
     if (opened) await device.open({ baudRate: MONITOR_BAUD });
-    await device.setSignals({ dataTerminalReady: false, requestToSend: true });
-    await sleep(120);
-    await device.setSignals({ requestToSend: false });
+    await pulseReset();
     if (opened) await device.close();
     status("Target reset.");
   } catch (e) { status("Reset failed: " + e.message); }
@@ -129,7 +131,7 @@ window.toggleMonitor = async function(){
   } catch (e) { status("Monitor open failed: " + e.message); return; }
   monitoring = true;
   $("btnMon").textContent = "Stop monitor";
-  status("Monitoring at " + MONITOR_BAUD + " baud. Press Reset target to see boot output.");
+  status("Monitoring at " + MONITOR_BAUD + " baud.");
   (async () => {
     const dec = new TextDecoder();
     try {
@@ -148,6 +150,7 @@ window.toggleMonitor = async function(){
       }
     } catch (e) { if (monitoring) tw("\n[monitor error: " + e.message + "]\n"); }
   })();
+  try { await pulseReset(); } catch (e) {}
 };
 
 async function stopMonitor(){

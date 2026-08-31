@@ -11,7 +11,7 @@ The Wyze Color WLPA19CV2 bulbs have a factory test mode which allows a custom OT
 
 *"To break the lock on this ESP32, we're going to use an ESP32"*
 
-1. Flash `wyze-hijack-ap` to an ESP32S3. Keep it near the bulb and powered on for the rest of the process.
+1. Flash `wyze-hijack-ap` to an ESP32S3. Keep it powered on near the bulb.
     - Better with a serial console so you can tell when the exploit is running
 2. Put the bulb into something easy to switch like a wall switched circuit or a power strip
 3. Start with your bulb fresh out of the box OR factory reset. It should be pulsing green when powered on.

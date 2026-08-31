@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>wyze-hijack-ap flasher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="card header">
+      <h1>wyze-hijack-ap flasher</h1>
+      <p class="sub">Flash the hijack-AP firmware to an ESP32-S3 over Web Serial, then monitor.</p>
+    </header>
+
+    <div class="note">
+      <strong>&#9888; Notes</strong>
+      <br/>
+      <ul>
+        <li>Requires a WebSerial capable browser like Chrome or Edge</li>
+        <li>Put the board in download mode if it doesn't auto-reset</li>
+      </ul>
+    </div>
+
+    <section class="card">
+      <h2>1. Connect</h2>
+      <button id="btnConnect" onclick="connect()">Connect</button>
+      <button id="btnDisconnect" onclick="disconnectAll()" disabled>Disconnect</button>
+      <label style="margin-left:12px">Flash baud
+        <select id="flashBaud">
+          <option>921600</option><option>460800</option><option selected>115200</option>
+        </select>
+      </label>
+      <div class="kv" style="margin-top:12px"><span>Chip</span><b id="chip">-</b></div>
+      <div class="kv"><span>Detected</span><span id="chipPill" class="pill">not connected</span></div>
+    </section>
+
+    <section class="card">
+      <h2>2. Flash</h2>
+      <div id="slots"></div>
+      <label style="display:block;margin-top:10px">
+        <input type="checkbox" id="eraseChk" checked> Erase entire flash before writing
+      </label>
+      <label style="display:block;margin-top:6px">
+        <input type="checkbox" id="compressChk"> Compress during write (uncheck if flashing fails mid-write)
+      </label>
+      <button id="btnFlash" onclick="flash()" disabled>Flash wyze-hijack-ap</button>
+      <progress id="prog" value="0" max="100"></progress>
+    </section>
+
+    <section class="card">
+      <h2>3. Monitor</h2>
+      <button id="btnMon" onclick="toggleMonitor()">Start monitor</button>
+      <button onclick="resetTarget()">Reset target</button>
+      <button onclick="document.getElementById('term').textContent=''">Clear</button>
+    </section>
+
+    <section class="card">
+      <h2>Console</h2>
+      <div id="term"></div>
+      <div id="status">Idle.</div>
+    </section>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

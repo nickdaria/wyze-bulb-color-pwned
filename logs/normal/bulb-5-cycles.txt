@@ -1,0 +1,76 @@
+===
+Hosts a network called ESP_806221
+===
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (482) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (542) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (547) [app_service, 255]: fac wifi_rssi: -40
+I (552) [fun_fac, 900]: in old count: 18
+I (559) [app_light.c, 966]: light_off: 0
+E (572) [app_light.c, 203]: enable channel set fail!
+E (576) [app_light.c, 125]: Gray IIC write setting error!
+E (579) [app_light.c, 125]: Gray IIC write setting error!
+E (580) [app_light.c, 125]: Gray IIC write setting error!
+E (586) [app_light.c, 125]: Gray IIC write setting error!
+E (591) [app_light.c, 125]: Gray IIC write setting error!
+E (609) [app_light.c, 267]: enable channel set fail! ffffffff
+E (614) [app_light.c, 267]: enable channel set fail! ffffffff
+E (619) [app_light.c, 267]: enable channel set fail! ffffffff
+E (624) [app_light.c, 267]: enable channel set fail! ffffffff
+E (629) [app_light.c, 267]: enable channel set fail! ffffffff
+E (643) [app_light.c, 203]: enable channel set fail!
+E (647) [app_light.c, 990]: enable light_off is fail 0
+W (651) [app_light.c, 725]: change bri:50, rgb:0000FF, fade:500, flash:0
+E (665) [app_light.c, 203]: enable channel set fail!
+E (669) [app_light.c, 784]: set RGB enable error! 0
+
+I (675) pp: pp rom version: 9387209
+I (680) net80211: net80211 rom version: 9387209
+I (690) wifi_init: rx ba win: 6
+I (694) wifi_init: tcpip mbox: 32
+I (698) wifi_init: udp mbox: 6
+I (702) wifi_init: tcp mbox: 6
+I (706) wifi_init: tcp tx win: 5744
+I (710) wifi_init: tcp rx win: 5744
+I (714) wifi_init: tcp mss: 1440
+I (718) wifi_init: WiFi IRAM OP enabled
+I (722) wifi_init: WiFi RX IRAM OP enabled
+I (769) wifi_init: WiFi SLP IRAM OP enabled
+I (774) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07
+W (776) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration

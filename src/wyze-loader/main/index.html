@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>wyze-loader</title>
+  <style>
+    :root{
+      --bg:#0e0e0f; --card:#1b1b1f; --card2:#000000; --line:#080808;
+      --text:#e6e8eb; --muted:#9aa3ad; --accent:#5aa9ff; --warn:#e0533d;
+      --amberbg:#3a2f1a; --amber:#e0a83d;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.5;}
+    .wrap{max-width:820px;margin:0 auto;padding:24px 16px 60px;}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+      padding:18px 22px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.3);}
+    .card h2{margin:0 0 14px;font-size:17px;font-weight:600;}
+    .card h3{margin:18px 0 8px;font-size:12px;color:var(--muted);font-weight:600;
+      text-transform:uppercase;letter-spacing:.05em;}
+    .header{text-align:center;}
+    .header h1{margin:0 0 4px;font-size:26px;letter-spacing:-.01em;}
+    .header .sub{margin:0 0 10px;color:var(--muted);}
+    .header .credits{margin:0;font-size:13px;color:var(--muted);}
+    .header .ver{margin:8px 0 0;font-size:12px;color:var(--muted);font-family:ui-monospace,Menlo,Consolas,monospace;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    button{background:var(--accent);color:#04121f;border:0;border-radius:8px;
+      padding:8px 14px;font-size:14px;font-weight:600;cursor:pointer;margin:4px 6px 4px 0;}
+    button:hover{background:#7bbaff;}
+    button.warn-btn{background:var(--warn);color:#fff;}
+    button.warn-btn:hover{background:#f0674f;}
+    button:disabled{opacity:.45;cursor:not-allowed;}
+    button:disabled:hover{background:var(--accent);}
+    button.warn-btn:disabled:hover{background:var(--warn);}
+    .badge{display:inline-block;background:var(--card2);color:#000000;font-size:11px;font-weight:700;
+      padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle;letter-spacing:.02em;}
+    input,select{background:var(--card2);color:var(--text);border:1px solid var(--line);
+      border-radius:6px;padding:6px 8px;font-size:14px;margin:2px 0;}
+    input[type=range]{padding:0;vertical-align:middle;}
+    label{margin-right:10px;color:var(--muted);}
+    table{border-collapse:collapse;width:100%;font-size:13px;}
+    td,th{border:1px solid var(--line);padding:6px 10px;text-align:left;}
+    th{background:var(--card2);color:var(--muted);font-weight:600;}
+    .tablewrap{overflow-x:auto;}
+    .kv{display:flex;justify-content:space-between;gap:16px;padding:7px 0;border-bottom:1px solid var(--line);}
+    .kv:last-child{border-bottom:0;}
+    .kv span{color:var(--muted);}
+    .kv b{font-family:ui-monospace,Menlo,Consolas,monospace;}
+    #log{white-space:pre-wrap;background:#101216;border:1px solid var(--line);border-radius:8px;
+      padding:10px;min-height:2.5em;font-family:ui-monospace,Menlo,Consolas,monospace;
+      font-size:12.5px;color:#cbd3dc;}
+    .note{background:var(--amberbg);border:1px solid var(--amber);border-radius:8px;
+      padding:12px 14px;margin-bottom:14px;font-size:13px;color:#f0d9a8;}
+    .note strong{color:var(--amber);}
+    .steps{margin:0;padding-left:22px;}
+    .steps li{margin-bottom:16px;}
+    .steps li b{display:block;margin-bottom:6px;}
+    progress{width:100%;height:14px;margin-top:6px;}
+    .spinner{width:40px;height:40px;border:4px solid #333842;border-top-color:var(--accent);
+      border-radius:50%;animation:spin 1s linear infinite;margin-bottom:14px;}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    #overlay{position:fixed;inset:0;background:rgba(10,11,14,.92);z-index:1000;
+      display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+    #overlay.show{display:flex;}
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <div class="spinner"></div>
+    <div id="overlaymsg">Rebooting...</div>
+  </div>
+
+  <div class="wrap">
+    <header class="card header">
+      <h1>wyze-loader</h1>
+      <p class="sub">Wyze bulb firmware loader &amp; flash tool</p>
+      <p class="credits">
+        <a href="https://github.com/nickdaria/wyze-bulb-color-pwned">wyze-bulb-color-pwned</a>
+        &middot; by Nick Daria (<a href="https://github.com/nickdaria">GitHub</a>, <a href="https://www.nickdaria.com/">nickdaria.com</a>)
+      </p>
+      <p class="ver" id="version">-</p>
+    </header>
+
+    <section class="card">
+      <h2>Info</h2>
+      <div class="kv"><span>MAC address</span><b id="mac">-</b></div>
+      <div class="kv"><span>OTA active slot<span class="badge">this loader</span></span></span><span><b id="running">-</b></div>
+      <div class="kv"><span>OTA inactive target</span><b id="target">-</b></div>
+    </section>
+
+    <section class="card">
+      <h2>Log</h2>
+      <div id="log"></div>
+    </section>
+
+    <section class="card">
+      <h2>Install firmware</h2>
+      <div class="note">
+        <strong>&#9888; User Note</strong> 
+        <br/>
+        <ul>
+          <li>This tool is currently running out of the active OTA slot. Initiating an firmware upgrade will replace the firmware in the inactive slot (most likely Wyze). Take a backup.</li>
+          <li>While these bulbs are not "brickable", writing a firmware file without OTA capabilities or some sequence back to this loader OTA slot will require opening the bulb and soldering for a UART flash.</li>
+        </ul>
+      </div>
+      <div class="note">
+        <strong>&#9888; Developer Note</strong> 
+        <br/>
+        Due to the OTA nature of this loader, the partition table cannot be changed. As such, all firmware images MUST be compiled against the factory dual-OTA Wyze partition table seen below.
+      </div>
+      <ol class="steps">
+        <li><b>Backup</b>
+          <button onclick="backupInactive()">Download inactive slot image</button></li>
+        <li><b>Upload image</b>
+          <input type="file" id="f">
+          <button onclick="up()">Upload</button>
+          <progress id="pg" value="0" max="100"></progress></li>
+        <li><b>Toggle OTA slot</b>
+          <button id="btn-setboot" onclick="setboot()" disabled>Set boot to target slot</button></li>
+        <li><b>Reboot</b>
+          <button id="btn-reboot-install" class="warn-btn" onclick="reboot()" disabled>Reboot</button></li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>System</h2>
+      <button onclick="fullbackup()">Download chip image</button>
+      <button onclick="setboot()">Set OTA slot to target</button>
+      <button onclick="reboot()">Reboot</button>
+    </section>
+
+    <section class="card">
+      <h2>Flash</h2>
+      <h3>Partitions</h3>
+      <div class="tablewrap"><table id="parts"></table></div>
+      <h3>Raw flash dump</h3>
+      <label>offset <input id="off" value="0x0" size="10"></label>
+      <label>size <input id="sz" value="0x8000" size="10"></label>
+      <button onclick="rawdump()">Download</button>
+    </section>
+
+    <section class="card">
+      <h2>Bulb</h2>
+      <button onclick="bulbOff()">Off</button>
+      <div class="tablewrap"><table id="bulbtbl"></table></div>
+      <button onclick="bulbAll()">Write all</button>
+    </section>
+  </div>
+
+  <script>
+    var L = function(s){ document.getElementById('log').textContent += s + '\n'; };
+
+    function overlayShow(msg){
+      document.getElementById('overlaymsg').textContent = msg;
+      document.getElementById('overlay').classList.add('show');
+    }
+
+    var g_target = '';
+    function refresh(){
+      fetch('/info').then(r=>r.json()).then(j=>{
+        g_target = j.target || '';
+        document.getElementById('mac').textContent = j.mac || '-';
+        document.getElementById('running').textContent = j.running || '-';
+        document.getElementById('target').textContent = j.target || '-';
+        document.getElementById('version').textContent = j.version ? (j.version + (j.date ? '  \u00b7  ' + j.date : '')) : '-';
+        if (j.bonus) console.log(j.bonus);
+      });
+      fetch('/parts').then(r=>r.json()).then(a=>{
+        var h = '<tr><th>label</th><th>type</th><th>sub</th><th>offset</th><th>size</th><th></th></tr>';
+        a.forEach(p=>{
+          h += '<tr><td>' + p.label + '</td><td>' + p.type + '</td><td>' + p.subtype +
+               '</td><td>0x' + p.offset.toString(16) + '</td><td>0x' + p.size.toString(16) +
+               '</td><td><a href=/dump?name=' + p.label + '>download</a></td></tr>';
+        });
+        document.getElementById('parts').innerHTML = h;
+      });
+    }
+
+    function rawdump(){
+      window.location = '/dump?offset=' + encodeURIComponent(document.getElementById('off').value)
+        + '&size=' + encodeURIComponent(document.getElementById('sz').value);
+    }
+    function fullbackup(){ window.location = '/dump?offset=0&size=0x400000'; }
+    function backupInactive(){
+      if (!g_target){ L('target slot unknown; wait for info to load'); return; }
+      window.location = '/dump?name=' + encodeURIComponent(g_target);
+    }
+
+    function up(){
+      var f = document.getElementById('f').files[0];
+      if (!f){ L('no file selected'); return; }
+      var x = new XMLHttpRequest();
+      x.open('POST', '/ota');
+      x.upload.onprogress = function(e){
+        if (e.lengthComputable) document.getElementById('pg').value = Math.round(100 * e.loaded / e.total);
+      };
+      x.onload = function(){
+        L(x.responseText);
+        if (x.status === 200) {
+          document.getElementById('btn-setboot').disabled = false;
+          document.getElementById('btn-reboot-install').disabled = false;
+        }
+        refresh();
+      };
+      x.onerror = function(){ L('upload error'); };
+      x.send(f);
+    }
+
+    function setboot(){
+      fetch('/setboot', {method:'POST'}).then(r=>r.text()).then(function(t){
+        L(t);
+        overlayShow('Applying, reloading...');
+        setTimeout(function(){ location.reload(); }, 800);
+      });
+    }
+
+    function reboot(){
+      overlayShow('Rebooting...');
+      fetch('/reboot', {method:'POST'}).catch(function(){});
+      setTimeout(waitForBack, 3000);
+    }
+    function waitForBack(){
+      fetch('/info', {cache:'no-store'}).then(function(r){
+        if (!r.ok) throw 0;
+        overlayShow('Back online, reloading...');
+        setTimeout(function(){ location.reload(); }, 500);
+      }).catch(function(){ setTimeout(waitForBack, 1500); });
+    }
+
+    var BCH = [];
+    function cv(ch){ document.getElementById('cv'+ch).textContent = document.getElementById('ch'+ch).value; }
+    function chVal(ch){ return parseInt(document.getElementById('ch'+ch).value) || 0; }
+    function bulbWrite(ch,val){ return fetch('/bulb/write?ch='+ch+'&val='+val,{method:'POST'}).then(r=>r.text()).then(L); }
+    function bulbAll(){ BCH.forEach(function(c){ bulbWrite(c.idx, chVal(c.idx)); }); }
+    function bulbOff(){ BCH.forEach(function(c){ document.getElementById('ch'+c.idx).value=0; cv(c.idx); bulbWrite(c.idx,0); }); }
+    function loadChannels(){
+      fetch('/bulb/channels').then(r=>r.json()).then(function(a){
+        BCH = a;
+        var h = '<tr><th>Channel</th><th>Value (0-1023)</th><th></th></tr>';
+        a.forEach(function(c){
+          h += '<tr><td>' + c.name + ' (OUT' + (c.idx+1) + ')</td><td><input type="range" id="ch' + c.idx + '" min="0" max="1023" value="0" oninput="cv(' + c.idx + ')"> <span id="cv' + c.idx + '">0</span></td><td><button onclick="bulbWrite(' + c.idx + ',chVal(' + c.idx + '))">write</button></td></tr>';
+        });
+        document.getElementById('bulbtbl').innerHTML = h;
+      });
+    }
+
+    refresh();
+    loadChannels();
+  </script>
+</body>
+</html>

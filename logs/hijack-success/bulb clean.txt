@@ -1,0 +1,1508 @@
+
+ Serial  Port opened
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (482) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (499) [mdebug_log, 215]: Mdebug log initialized successfully
+I (500) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (502) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (515) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (482) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 1
+I (558) [app_service, 296]: fac.old_flag: 2
+I (562) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunma�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 2
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (603) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (611) [app_light.c, 966]: light_off: 0
+E (616) [app_light.c, 203]: enable channel set fail!
+E (625) [app_light.c, 125]: Gray IIC w�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (482) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (499) [mdebug_log, 215]: Mdebug log initialized successfully
+I (501) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (502) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (515) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (544) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (549) [app_service, 255]: fac wifi_rssi: -40
+I (554) [fun_fac, 900]: in old count: 3
+I (560) [app_service, 296]: fac.old_flag: 2
+I (564) [app_service, 297]: fac.factory_complete_flag: 1
+W (568) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (579) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (594) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (604) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (613) [app_light.c, 966]: light_off: 0
+E (617) [app_light.c, 203]: enable channel set fail!
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (498) [mdebug_log, 215]: Mdebug log initialized successfully
+I (500) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (502) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (515) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (544) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (549) [app_service, 255]: fac wifi_rssi: -40
+I (592) [fun_fac, 900]: in old count: 4
+I (598) [app_service, 296]: fac.old_flag: 2
+I (602) [app_service, 297]: fac.factory_complete_flag: 1
+W (606) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (613) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (628) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (638) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (647) [app_light.c, 966]: light_off: 0
+E (651) [app_light.c, 203]: enable channel set fail!
+E (684) [app_light.c, 267]: enable channel set fail! ffffffff
+E (691) [app_light.c, 267]: enable channel set fail! ffffffff
+E (697) [app_light.c, 267]: enable channel set fail! ffffffff
+E (704) [app_light.c, 267]: enable channel set fail! ffffffff
+E (710) [app_light.c, 267]: enable channel set fail! ffffffff
+E (719) [app_light.c, 203]: enable channel set fail!
+E (722) [app_light.c, 990]: enable light_off is fail 0
+I (728) [TempSensor, 242]: set ulp flag: 1
+E (736) [app_light.c, 267]: enable channel set fail! ffffffff
+I (740) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (544) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (550) [app_service, 255]: fac wifi_rssi: -40
+I (554) [fun_fac, 900]: in old count: 5
+I (560) [app_service, 296]: fac.old_flag: 2
+I (564) [app_service, 297]: fac.factory_complete_flag: 1
+W (568) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (579) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (594) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (604) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (613) [app_light.c, 966]: light_off: 0
+E (617) [app_light.c, 203]: enable channel set fail!
+E (650) [app_light.c, 267]: enable channel set fail! ffffffff
+E (657) [app_light.c, 267]: enable channel set fail! ffffffff
+E (663) [app_light.c, 267]: enable channel set fail! ffffffff
+E (669) [app_light.c, 267]: enable channel set fail! ffffffff
+E (676) [app_light.c, 267]: enable channel set fail! ffffffff
+E (685) [app_light.c, 203]: enable channel set fail!
+E (688) [app_light.c, 990]: enable light_off is fail 0
+I (694) [TempSensor, 242]: set ulp flag: 1
+E (702) [app_light.c, 267]: enable channel set fail! ffffffff
+I (705) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (544) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (550) [app_service, 255]: fac wifi_rssi: -40
+I (554) [fun_fac, 900]: in old count: 6
+I (560) [app_service, 296]: fac.old_flag: 2
+I (564) [app_service, 297]: fac.factory_complete_flag: 1
+W (569) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (579) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (594) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (604) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (613) [app_light.c, 966]: light_off: 0
+E (617) [app_light.c, 203]: enable channel set fail!
+E (650) [app_light.c, 267]: enable channel set fail! ffffffff
+E (657) [app_light.c, 267]: enable channel set fail! ffffffff
+E (663) [app_light.c, 267]: enable channel set fail! ffffffff
+E (670) [app_light.c, 267]: enable channel set fail! ffffffff
+E (676) [app_light.c, 267]: enable channel set fail! ffffffff
+E (685) [app_light.c, 203]: enable channel set fail!
+E (688) [app_light.c, 990]: enable light_off is fail 0
+I (694) [TempSensor, 242]: set ulp flag: 1
+E (702) [app_light.c, 267]: enable channel set fail! ffffffff
+I (705) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (551) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (579) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (584) [app_service, 255]: fac wifi_rssi: -40
+I (589) [fun_fac, 900]: in old count: 7
+I (594) [app_service, 296]: fac.old_flag: 2
+I (598) [app_service, 297]: fac.factory_complete_flag: 1
+W (603) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (614) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (628) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (639) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (647) [app_light.c, 966]: light_off: 0
+E (652) [app_light.c, 203]: enable channel set fail!
+E (685) [app_light.c, 267]: enable channel set fail! ffffffff
+E (691) [app_light.c, 267]: enable channel set fail! ffffffff
+E (698) [app_light.c, 267]: enable channel set fail! ffffffff
+E (704) [app_light.c, 267]: enable channel set fail! ffffffff
+E (711) [app_light.c, 267]: enable channel set fail! ffffffff
+E (719) [app_light.c, 203]: enable channel set fail!
+E (723) [app_light.c, 990]: enable light_off is fail 0
+I (728) [TempSensor, 242]: set ulp flag: 1
+E (735) [app_light.c, 267]: enable channel set fail! ffffffff
+I (740) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (482) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 8
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (603) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (611) [app_light.c, 966]: light_off: 0
+E (616) [app_light.c, 203]: enable channel set fail!
+E (649) [app_light.c, 267]: enable channel set fail! ffffffff
+E (655) [app_light.c, 267]: enable channel set fail! ffffffff
+E (662) [app_light.c, 267]: enable channel set fail! ffffffff
+E (668) [app_light.c, 267]: enable channel set fail! ffffffff
+E (675) [app_light.c, 267]: enable channel set fail! ffffffff
+E (684) [app_light.c, 203]: enable channel set fail!
+E (687) [app_light.c, 990]: enable light_off is fail 0
+I (692) [TempSensor, 242]: set ulp flag: 1
+E (700) [app_light.c, 267]: enable channel set fail! ffffffff
+I (704) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 9
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (603) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (648) [app_light.c, 966]: light_off: 0
+E (651) [app_light.c, 203]: enable channel set fail!
+E (678) [app_light.c, 267]: enable channel set fail! ffffffff
+E (685) [app_light.c, 267]: enable channel set fail! ffffffff
+E (692) [app_light.c, 267]: enable channel set fail! ffffffff
+E (698) [app_light.c, 267]: enable channel set fail! ffffffff
+E (704) [app_light.c, 267]: enable channel set fail! ffffffff
+E (712) [app_light.c, 203]: enable channel set fail!
+E (716) [app_light.c, 990]: enable light_off is fail 0
+I (722) [TempSensor, 242]: set ulp flag: 1
+E (729) [app_light.c, 267]: enable channel set fail! ffffffff
+I (733) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (482) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 10
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (603) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (611) [app_light.c, 966]: light_off: 0
+E (616) [app_light.c, 203]: enable channel set fail!
+E (649) [app_light.c, 267]: enable channel set fail! ffffffff
+E (655) [app_light.c, 267]: enable channel set fail! ffffffff
+E (662) [app_light.c, 267]: enable channel set fail! ffffffff
+E (668) [app_light.c, 267]: enable channel set fail! ffffffff
+E (675) [app_light.c, 267]: enable channel set fail! ffffffff
+E (683) [app_light.c, 203]: enable channel set fail!
+E (687) [app_light.c, 990]: enable light_off is fail 0
+I (692) [TempSensor, 242]: set ulp flag: 1
+E (698) [app_light.c, 267]: enable channel set fail! ffffffff
+I (704) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 11
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (603) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (611) [app_light.c, 966]: light_off: 0
+E (616) [app_light.c, 203]: enable channel set fail!
+E (649) [app_light.c, 267]: enable channel set fail! ffffffff
+E (656) [app_light.c, 267]: enable channel set fail! ffffffff
+E (662) [app_light.c, 267]: enable channel set fail! ffffffff
+E (668) [app_light.c, 267]: enable channel set fail! ffffffff
+E (675) [app_light.c, 267]: enable channel set fail! ffffffff
+E (683) [app_light.c, 203]: enable channel set fail!
+E (687) [app_light.c, 990]: enable light_off is fail 0
+I (692) [TempSensor, 242]: set ulp flag: 1
+E (698) [app_light.c, 267]: enable channel set fail! ffffffff
+I (704) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 12
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (648) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (652) [app_light.c, 966]: light_off: 0
+E (655) [app_light.c, 203]: enable channel set fail!
+E (687) [app_light.c, 267]: enable channel set fail! ffffffff
+E (693) [app_light.c, 267]: enable channel set fail! ffffffff
+E (700) [app_light.c, 267]: enable channel set fail! ffffffff
+E (706) [app_light.c, 267]: enable channel set fail! ffffffff
+E (713) [app_light.c, 267]: enable channel set fail! ffffffff
+E (722) [app_light.c, 203]: enable channel set fail!
+E (725) [app_light.c, 990]: enable light_off is fail 0
+I (730) [TempSensor, 242]: set ulp flag: 1
+E (738) [app_light.c, 267]: enable channel set fail! ffffffff
+I (742) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 13
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (603) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (611) [app_light.c, 966]: light_off: 0
+E (616) [app_light.c, 203]: enable channel set fail!
+E (649) [app_light.c, 267]: enable channel set fail! ffffffff
+E (656) [app_light.c, 267]: enable channel set fail! ffffffff
+E (662) [app_light.c, 267]: enable channel set fail! ffffffff
+E (668) [app_light.c, 267]: enable channel set fail! ffffffff
+E (675) [app_light.c, 267]: enable channel set fail! ffffffff
+E (683) [app_light.c, 203]: enable channel set fail!
+E (687) [app_light.c, 990]: enable light_off is fail 0
+I (692) [TempSensor, 242]: set ulp flag: 1
+E (698) [app_light.c, 267]: enable channel set fail! ffffffff
+I (704) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 14
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (603) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (611) [app_light.c, 966]: light_off: 0
+E (616) [app_light.c, 203]: enable channel set fail!
+E (649) [app_light.c, 267]: enable channel set fail! ffffffff
+E (655) [app_light.c, 267]: enable channel set fail! ffffffff
+E (662) [app_light.c, 267]: enable channel set fail! ffffffff
+E (668) [app_light.c, 267]: enable channel set fail! ffffffff
+E (675) [app_light.c, 267]: enable channel set fail! ffffffff
+E (683) [app_light.c, 203]: enable channel set fail!
+E (687) [app_light.c, 990]: enable light_off is fail 0
+I (692) [TempSensor, 242]: set ulp flag: 1
+E (699) [app_light.c, 267]: enable channel set fail! ffffffff
+I (704) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (551) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (866) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (871) [app_service, 255]: fac wifi_rssi: -40
+I (876) [fun_fac, 900]: in old count: 15
+I (882) [app_service, 296]: fac.old_flag: 2
+I (922) [app_service, 297]: fac.factory_complete_flag: 1
+W (928) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (934) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (949) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (959) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (968) [app_light.c, 966]: light_off: 0
+E (972) [app_light.c, 203]: enable channel set fail!
+�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (482) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (498) [mdebug_log, 215]: Mdebug log initialized successfully
+I (500) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (502) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (515) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (544) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (549) [app_service, 255]: fac wifi_rssi: -40
+I (554) [fun_fac, 900]: in old count: 16
+I (559) [app_service, 296]: fac.old_flag: 2
+I (564) [app_service, 297]: fac.factory_complete_flag: 1
+W (568) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (579) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (593) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (604) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (612) [app_light.c, 966]: light_off: 0
+E (617) [app_light.c, 203]: enable channel set fail!
+E (650) [app_light.c, 267]: enable channel set fail! ffffffff
+E (656) [app_light.c, 267]: enable channel set fail! ffffffff
+E (663) [app_light.c, 267]: enable channel set fail! ffffffff
+E (669) [app_light.c, 267]: enable channel set fail! ffffffff
+E (676) [app_light.c, 267]: enable channel set fail! ffffffff
+E (684) [app_light.c, 203]: enable channel set fail!
+E (688) [app_light.c, 990]: enable light_off is fail 0
+I (693) [TempSensor, 242]: set ulp flag: 1
+E (699) [app_light.c, 267]: enable channel set fail! ffffffff
+I (705) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (483) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 17
+I (558) [app_service, 296]: fac.old_flag: 2
+I (563) [app_service, 297]: fac.factory_complete_flag: 1
+W (567) [fun_timer, 122]: delay_switch = 0,data_net.delay_switch_ts:0000000000,delay_switch_flag:0
+delay_switch.have = 0
+if (delay_switch_task_handle == NULL)
+W (578) [fun_sunmatch, 783]: sun_match_flag:0
+sun_match.have = 0
+if (sun_match_task_handle == NULL)
+if (sleep_routines_task_handle == NULL)
+W (592) [fun_vacation, 98]: time zone = 0,data_net.vacationFlag:0
+if (vacation_task_handle == NULL)
+now time: 0
+E (603) [fun_vacation, 79]: vacation.have = HL_FALSE
+I (611) [app_light.c, 966]: light_off: 0
+E (616) [app_light.c, 203]: enable channel set fail!
+E (649) [app_light.c, 267]: enable channel set fail! ffffffff
+E (656) [app_light.c, 267]: enable channel set fail! ffffffff
+E (662) [app_light.c, 267]: enable channel set fail! ffffffff
+E (668) [app_light.c, 267]: enable channel set fail! ffffffff
+E (675) [app_light.c, 267]: enable channel set fail! ffffffff
+E (683) [app_light.c, 203]: enable channel set fail!
+E (687) [app_light.c, 990]: enable light_off is fail 0
+I (692) [TempSensor, 242]: set ulp flag: 1
+E (698) [app_light.c, 267]: enable channel set fail! ffffffff
+I (704) [app_ulp, 100]: Entering light sleep
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (381) cpu_start: Pro cpu up.
+I (390) cpu_start: Pro cpu start user code
+I (390) cpu_start: cpu freq: 160000000
+I (390) cpu_start: Application information:
+I (393) cpu_start: Project name:     wyze_bulb
+I (398) cpu_start: App version:      HL_A19C2_1.0.2.6-dirty
+I (404) cpu_start: Compile time:     Jun  2 2023 11:14:37
+I (410) cpu_start: ELF file SHA256:  4d4e5ad0f83ce925...
+I (416) cpu_start: ESP-IDF:          2cbc2fea-dirty
+I (422) heap_init: Initializing. RAM available for dynamic allocation:
+I (429) heap_init: At 3FCA6110 len 00019EF0 (103 KiB): D/IRAM
+I (435) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (442) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM
+I (449) spi_flash: detected chip: generic
+I (453) spi_flash: flash io: dio
+I (458) sleep: Configure to isolate all GPIO pins in sleep state
+I (464) sleep: Enable automatic switching of GPIO sleep configuration
+I (482) coexist: coexist rom version 9387209
+I (483) cpu_start: Starting scheduler.
+W (497) [mdebug_log, 215]: Mdebug log initialized successfully
+I (499) [mdebug_flash, 67]: Mdebug flash initialized successfully
+W (501) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+I (514) [mdebug_flash, 69]: Log save partition subtype: label: reserved, addr: 0x4087808, offset: 0, size: 73728
+D03F27BEED61
+I (543) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (548) [app_service, 255]: fac wifi_rssi: -40
+I (553) [fun_fac, 900]: in old count: 18
+I (600) [app_light.c, 966]: light_off: 0
+E (614) [app_light.c, 203]: enable channel set fail!
+E (651) [app_light.c, 267]: enable channel set fail! ffffffff
+E (656) [app_light.c, 267]: enable channel set fail! ffffffff
+E (661) [app_light.c, 267]: enable channel set fail! ffffffff
+E (666) [app_light.c, 267]: enable channel set fail! ffffffff
+E (671) [app_light.c, 267]: enable channel set fail! ffffffff
+E (685) [app_light.c, 203]: enable channel set fail!
+E (689) [app_light.c, 990]: enable light_off is fail 0
+W (693) [app_light.c, 725]: change bri:50, rgb:0000FF, fade:500, flash:0
+E (707) [app_light.c, 203]: enable channel set fail!
+E (711) [app_light.c, 784]: set RGB enable error! 0
+
+I (717) pp: pp rom version: 9387209
+I (722) net80211: net80211 rom version: 9387209
+I (732) wifi_init: rx ba win: 6
+I (736) wifi_init: tcpip mbox: 32
+I (740) wifi_init: udp mbox: 6
+I (744) wifi_init: tcp mbox: 6
+I (748) wifi_init: tcp tx win: 5744
+I (752) wifi_init: tcp rx win: 5744
+I (757) wifi_init: tcp mss: 1440
+I (761) wifi_init: WiFi IRAM OP enabled
+I (765) wifi_init: WiFi RX IRAM OP enabled
+I (768) wifi_init: WiFi SLP IRAM OP enabled
+I (774) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07
+W (775) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration
+W (3381) [fun_fac, 427]: Waiting for AP connection...
+I (4717) esp_netif_handlers: sta ip: 192.168.3.1, mask: 255.255.255.0, gw: 192.168.3.168
+W (4719) [fun_fac, 60]: get IP :192.168.3.1
+W (4726) [fun_fac, 429]: Connected to AP
+I (4731) [fun_fac, 487]: FAC TEST START
+E (4750) [app_light.c, 203]: enable channel set fail!
+E (4763) [app_light.c, 169]: Current IIC write setting error !
+E (4774) [app_light.c, 169]: Current IIC write setting error !
+E (4787) [app_light.c, 169]: Current IIC write setting error !
+E (4801) [app_light.c, 169]: Current IIC write setting error !
+I (8159) [sys_iot, 539]: aws iot disconnect success.
+E (8160) [sys_iot, 87]: param NULL!
+W (8184) [fun_vacation, 121]: time zone = 0,data_net.vacationFlag:0
+I (8191) [sys_ota, 431]: sys_wifi_ota_start
+W (8198) [sys_ota, 378]:  =====> sys_ota_task free heap size: 114984
+
+I (8228) [sys_ota, 149]: Starting OTA...
+I (8232) [sys_ota, 173]: Writing to partition subtype 17 at offset 0x1f0000
+I (18314) [sys_ota, 182]: esp_ota_begin succeeded
+I (18343) [sys_ota, 73]: HTTP_EVENT_ON_CONNECTED
+I (18348) [sys_ota, 76]: HTTP_EVENT_HEADER_SENT
+E (18401) task_wdt: Task watchdog got triggered. The following tasks did not reset the watchdog in time:
+E (18401) task_wdt:  - IDLE (CPU 0)
+E (18401) task_wdt: Tasks currently running:
+E (18401) task_wdt: CPU 0: mdebug_log_send
+E (18642) [app_light.c, 203]: enable channel set fail!
+I (18697) [sys_ota, 80]: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/octet-stream
+I (18698) [sys_ota, 80]: HTTP_EVENT_ON_HEADER, key=Content-Length, value=803936
+I (18729) HTTP_CLIENT: Body received in fetch header state, 0x3fcd88f3, 429
+I (18737) [sys_ota, 241]:  OTA Data Total Size : 803936
+I (18742) [sys_ota, 245]: Please Wait. This may take time
+I (19176) [sys_ota, 53]: already download: 5%
+E (18689) [app_light.c, 481]: set WC enable error! 0
+
+I (19863) [sys_ota, 53]: already download: 10%
+I (20280) [sys_ota, 53]: already download: 15%
+I (20986) [sys_ota, 53]: already download: 20%
+I (21405) [sys_ota, 53]: already download: 25%
+I (21811) [sys_ota, 53]: already download: 30%
+I (22230) [sys_ota, 53]: already download: 35%
+I (22634) [sys_ota, 53]: already download: 40%
+I (23051) [sys_ota, 53]: already download: 45%
+I (23458) [sys_ota, 53]: already download: 50%
+I (23876) [sys_ota, 53]: already download: 55%
+I (24297) [sys_ota, 53]: already download: 60%
+I (24697) [sys_ota, 53]: already download: 65%
+I (25093) [sys_ota, 53]: already download: 70%
+I (25510) [sys_ota, 53]: already download: 75%
+E (25658) task_wdt: Task watchdog got triggered. The following tasks did not reset the watchdog in time:
+E (25658) task_wdt:  - IDLE (CPU 0)
+E (25658) task_wdt: Tasks currently running:
+E (25658) task_wdt: CPU 0: tiT
+I (25952) [sys_ota, 53]: already download: 80%
+I (26370) [sys_ota, 53]: already download: 85%
+I (26773) [sys_ota, 53]: already download: 90%
+I (27186) [sys_ota, 53]: already download: 95%
+I (27590) [sys_ota, 53]: already download: 100%
+I (27591) [sys_ota, 281]: Total binary data length writen: 803936
+W (27591) [sys_ota, 282]:  =====>ota free heap size: 108756
+I (27610) [sys_ota, 103]: HTTP_EVENT_DISCONNECTED
+I (27630) [sys_ota, 103]: HTTP_EVENT_DISCONNECTED
+W (27634) [sys_ota, 284]: (xTaskGetTickCount() - start_time):19
+I (27640) esp_image: segment 0: paddr=001f0020 vaddr=3c0a0020 size=1d4b4h (119988) map
+I (27713) esp_image: segment 1: paddr=0020d4dc vaddr=3fc90200 size=02b3ch ( 11068) 
+I (27721) esp_image: segment 2: paddr=00210020 vaddr=42000020 size=93b40h (604992) map
+I (27939) esp_image: segment 3: paddr=002a3b68 vaddr=3fc92d3c size=00864h (  2148) 
+I (27941) esp_image: segment 4: paddr=002a43d4 vaddr=40380000 size=10034h ( 65588) 
+I (27982) esp_image: segment 5: paddr=002b4410 vaddr=50000000 size=00024h (    36) 
+I (27984) esp_image: segment 0: paddr=001f0020 vaddr=3c0a0020 size=1d4b4h (119988) map
+I (28050) esp_image: segment 1: paddr=0020d4dc vaddr=3fc90200 size=02b3ch ( 11068) 
+I (28060) esp_image: segment 2: paddr=00210020 vaddr=42000020 size=93b40h (604992) map
+I (28278) esp_image: segment 3: paddr=002a3b68 vaddr=3fc92d3c size=00864h (  2148) 
+I (28280) esp_image: segment 4: paddr=002a43d4 vaddr=40380000 size=10034h ( 65588) 
+I (28321) esp_image: segment 5: paddr=002b4410 vaddr=50000000 size=00024h (    36) 
+I (28359) [sys_ota, 316]: esp_ota_set_boot_partition succeeded
+E (28791) [app_light.c, 203]: enable channel set fail!
+E (28830) [app_light.c, 481]: set WC enable error! 0
+
+E (28982) [app_light.c, 203]: enable channel set fail!
+E (28986) [app_light.c, 481]: set WC enable error! 0
+
+E (29131) [app_light.c, 203]: enable channel set fail!
+E (29152) [app_light.c, 481]: set WC enable error! 0
+
+E (29377) [app_light.c, 203]: enable channel set fail!
+E (29381) [app_light.c, 481]: set WC enable error! 0
+
+E (29534) [app_light.c, 203]: enable channel set fail!
+E (29562) [app_light.c, 481]: set WC enable error! 0
+
+E (29679) [app_light.c, 203]: enable channel set fail!
+E (29702) [app_light.c, 481]: set WC enable error! 0
+
+E (29853) [app_light.c, 203]: enable channel set fail!
+E (29857) [app_light.c, 481]: set WC enable error! 0
+
+E (29970) [app_light.c, 203]: enable channel set fail!
+E (29993) [app_light.c, 481]: set WC enable error! 0
+
+E (30122) [app_light.c, 203]: enable channel set fail!
+E (30145) [app_light.c, 481]: set WC enable error! 0
+
+E (30291) [app_light.c, 203]: enable channel set fail!
+E (30295) [app_light.c, 481]: set WC enable error! 0
+
+E (30445) [app_light.c, 203]: enable channel set fail!
+E (30467) [app_light.c, 481]: set WC enable error! 0
+
+W (30502) [mdf_event_loop, 69]: <MDF_ERR_NOT_INIT> The event loop isn't initialized
+E (30589) [app_light.c, 203]: enable channel set fail!
+E (30617) [app_light.c, 481]: set WC enable error! 0
+
+E (30817) [app_light.c, 203]: enable channel set fail!
+E (30839) [app_light.c, 481]: set WC enable error! 0
+
+E (31065) [app_light.c, 203]: enable channel set fail!
+E (31096) [app_light.c, 481]: set WC enable error! 0
+
+E (31209) [app_light.c, 203]: enable channel set fail!
+E (31306) [app_light.c, 481]: set WC enable error! 0
+
+E (31982) [app_light.c, 203]: enable channel set fail!
+E (32005) [app_light.c, 481]: set WC enable error! 0
+
+E (32155) [app_light.c, 203]: enable channel set fail!
+E (32159) [app_light.c, 481]: set WC enable error! 0
+
+E (32272) [app_light.c, 203]: enable channel set fail!
+E (32295) [app_light.c, 481]: set WC enable error! 0
+
+E (32456) [app_light.c, 203]: enable channel set fail!
+E (32478) [app_light.c, 481]: set WC enable error! 0
+
+E (32601) [app_light.c, 203]: enable channel set fail!
+E (32624) [app_light.c, 481]: set WC enable error! 0
+
+E (32824) [app_light.c, 203]: enable channel set fail!
+E (32847) [app_light.c, 481]: set WC enable error! 0
+
+E (33069) [app_light.c, 203]: enable channel set fail!
+E (33073) [app_light.c, 481]: set WC enable error! 0
+
+E (33218) [app_light.c, 203]: enable channel set fail!
+E (33240) [app_light.c, 481]: set WC enable error! 0
+
+E (33439) [app_light.c, 203]: enable channel set fail!
+E (33462) [app_light.c, 481]: set WC enable error! 0
+
+E (33653) [app_light.c, 203]: enable channel set fail!
+E (33657) [app_light.c, 481]: set WC enable error! 0
+
+E (33801) [app_light.c, 203]: enable channel set fail!
+E (33823) [app_light.c, 481]: set WC enable error! 0
+
+E (34027) [app_light.c, 203]: enable channel set fail!
+E (34049) [app_light.c, 481]: set WC enable error! 0
+
+E (34276) [app_light.c, 203]: enable channel set fail!
+E (34298) [app_light.c, 481]: set WC enable error! 0
+
+E (34527) [app_light.c, 203]: enable channel set fail!
+E (34531) [app_light.c, 481]: set WC enable error! 0
+
+E (34675) [app_light.c, 203]: enable channel set fail!
+E (34697) [app_light.c, 481]: set WC enable error! 0
+
+E (34850) [app_light.c, 203]: enable channel set fail!
+E (34854) [app_light.c, 481]: set WC enable error! 0
+
+E (34967) [app_light.c, 203]: enable channel set fail!
+E (34990) [app_light.c, 481]: set WC enable error! 0
+
+E (35143) [app_light.c, 203]: enable channel set fail!
+E (35147) [app_light.c, 481]: set WC enable error! 0
+
+E (35284) [app_light.c, 203]: enable channel set fail!
+E (35288) [app_light.c, 481]: set WC enable error! 0
+
+E (35424) [app_light.c, 203]: enable channel set fail!
+E (35428) [app_light.c, 481]: set WC enable error! 0
+
+E (35564) [app_light.c, 203]: enable channel set fail!
+E (35568) [app_light.c, 481]: set WC enable error! 0
+
+E (35714) [app_light.c, 203]: enable channel set fail!
+E (35718) [app_light.c, 481]: set WC enable error! 0
+
+E (36384) [app_light.c, 203]: enable channel set fail!
+E (36406) [app_light.c, 481]: set WC enable error! 0
+
+E (36575) [app_light.c, 203]: enable channel set fail!
+E (36597) [app_light.c, 481]: set WC enable error! 0
+
+E (36718) [app_light.c, 203]: enable channel set fail!
+E (36741) [app_light.c, 481]: set WC enable error! 0
+
+E (36945) [app_light.c, 203]: enable channel set fail!
+E (36973) [app_light.c, 481]: set WC enable error! 0
+
+E (37188) [app_light.c, 203]: enable channel set fail!
+E (37192) [app_light.c, 481]: set WC enable error! 0
+
+E (37337) [app_light.c, 203]: enable channel set fail!
+E (37359) [app_light.c, 481]: set WC enable error! 0
+
+E (37584) [app_light.c, 203]: enable channel set fail!
+E (37588) [app_light.c, 481]: set WC enable error! 0
+
+E (37770) [app_light.c, 203]: enable channel set fail!
+E (37774) [app_light.c, 481]: set WC enable error! 0
+
+E (37887) [app_light.c, 203]: enable channel set fail!
+E (37910) [app_light.c, 481]: set WC enable error! 0
+
+E (38067) [app_light.c, 203]: enable channel set fail!
+E (38071) [app_light.c, 481]: set WC enable error! 0
+
+E (38217) [app_light.c, 203]: enable channel set fail!
+E (38245) [app_light.c, 481]: set WC enable error! 0
+
+W (38373) [sys_ota, 395]: Firmware upgrade Success
+E (38432) [fun_fac, 262]: Error occured during sending: errno -1
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807a4
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd6100,len:0x38c
+load:0x403ce000,len:0x6a8
+load:0x403d0000,len:0x2358
+SHA-256 comparison failed:
+Calculated: 579bd9f7cd17d43d89ce0d60b21bb23b2015945f43c6c2beff31484c39865776
+Expected: 0b51d477b86b847b709c695869d4c470c64d5f6c01a427eb22b53081e80e3dee
+Attempting to boot anyway...
+entry 0x403ce000
+I (232) cpu_start: Unicore app
+I (241) cpu_start: GPIO 20 and 21 are used as console UART I/O pins
+I (242) cpu_start: Pro cpu start user code
+I (242) cpu_start: cpu freq: 160000000 Hz
+I (243) app_init: Application information:
+I (247) app_init: Project name:     wyze_recovery
+I (252) app_init: App version:      277655e-dirty
+I (256) app_init: Compile time:     Aug 30 2026 06:54:20
+I (261) app_init: ELF file SHA256:  959c9016a...
+I (265) app_init: ESP-IDF:          v6.1
+I (269) efuse_init: Min chip rev:     v0.3
+I (273) efuse_init: Max chip rev:     v1.99 
+I (277) efuse_init: Chip rev:         v0.3
+I (281) heap_init: Initializing. RAM available for dynamic allocation:
+I (287) heap_init: At 3FC97DF0 len 00028210 (160 KiB): RAM
+I (292) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (298) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (304) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM
+I (311) spi_flash: detected chip: generic
+I (313) spi_flash: flash io: dio
+I (317) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (323) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (330) main_task: Started on CPU0
+I (360) main_task: Calling app_main()
+I (371) pp: pp rom version: 9387209
+I (372) net80211: net80211 rom version: 9387209
+I (374) wifi:wifi driver task: 3fca19cc, prio:23, stack:6656, core=0
+I (380) wifi:wifi firmware version: e12a754
+I (381) wifi:wifi certification version: v7.0
+I (382) wifi:config NVS flash: enabled
+I (386) wifi:config nano formatting: disabled
+I (390) wifi:Init data frame dynamic rx buffer num: 32
+I (395) wifi:Init static rx mgmt buffer num: 5
+I (399) wifi:Init management short buffer num: 32
+I (403) wifi:Init dynamic tx buffer num: 32
+I (407) wifi:Init static tx FG buffer num: 2
+I (411) wifi:Init static rx buffer size: 1600
+I (415) wifi:Init static rx buffer num: 10
+I (419) wifi:Init dynamic rx buffer num: 32
+I (424) wifi_init: rx ba win: 6
+I (426) wifi_init: accept mbox: 6
+I (429) wifi_init: tcpip mbox: 32
+I (432) wifi_init: udp mbox: 6
+I (435) wifi_init: tcp mbox: 6
+I (437) wifi_init: tcp tx win: 5760
+I (441) wifi_init: tcp rx win: 5760
+I (444) wifi_init: tcp mss: 1440
+I (447) wifi_init: WiFi IRAM OP enabled
+I (450) wifi_init: WiFi RX IRAM OP enabled
+I (459) phy_init: phy_version 1235,8bd8c6fc,Apr 13 2026,18:46:20
+W (460) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration
+I (497) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (555) wifi:mode : softAP (68:67:25:47:66:f9)
+I (556) wifi:Total power save buffer number: 16
+I (556) wifi:Init max length of beacon: 752/752
+I (557) wifi:Init max length of beacon: 752/752
+I (563) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (570) recovery: AP up: wyze-recovery_4766F9  http://192.168.4.1/
+I (578) main_task: Returned from app_main()
+I (8768) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (8770) wifi:station: 56:9d:e4:dc:f2:55 join, AID=1, bgn, 20
+I (9034) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (9382) wifi:<ba-add>idx:2 (ifx:1, 56:9d:e4:dc:f2:55), tid:6, ssn:19, winSize:64
+I (9504) wifi:<ba-add>idx:3 (ifx:1, 56:9d:e4:dc:f2:55), tid:0, ssn:0, winSize:64

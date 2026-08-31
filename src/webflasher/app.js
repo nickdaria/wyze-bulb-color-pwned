@@ -94,7 +94,8 @@ window.flash = async function(){
         $("prog").value = Math.round((sum / grand) * 100);
       },
     });
-    status("Flash complete. Start the monitor to view output.");
+    status("Flash complete. Starting monitor...");
+    if (!monitoring) await toggleMonitor();
   } catch (e) {
     status("Flash failed: " + e.message);
   } finally {

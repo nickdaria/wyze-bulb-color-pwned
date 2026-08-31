@@ -25,10 +25,10 @@ This project provides
     - Easy: [wyze-hijack-ap Web Flasher](https://nickdaria.github.io/wyze-bulb-color-pwned/)
     - Advanced: build from source, idf.py
 2. Put the bulb into something easy to switch like a wall switched circuit or a power strip
-3. Start with your bulb fresh out of the box OR factory reset. It should be pulsing green when powered on.
-4. Repeat the following until you see the light turn blue, then leave it on
+3. Repeat the following until you see the light turn blue, then leave it on
     - Turn power on until you see the green light fade on, immediately shut it back off
     - Keep power off for 5 seconds
+    - NOTE: If your bulb has already been setup, the first few cycles will do the factory reset. It should start turning green after 3-4 cycles.
 5. After ~17 cycles, the light should be blue for a moment. Sit tight while the exploit runs
 6. After ~30 seconds, the exploit should be complete and your bulb should turn purple to indicate the wyze-loader payload is running
 

@@ -13,7 +13,7 @@ While I was unable to find any images or resources on my specific model, previou
 Some other behaviors of interest:
 
 - These are factory reset by toggling the power to them a certain number of times
-- These launch an AP (ESP_xxxxxxx) when power is toggled the same way 5 times
+- These launch an AP (ESP_xxxxxxx) when power is toggled the same way 5 times - however this is fairly secure and only for provisioning Wi-Fi creds
 
 ## Physical
 

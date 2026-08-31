@@ -1,0 +1,70 @@
+substitutions:
+  deviceid: wyze_v2_color1
+  devicename: wyze v2 color1
+
+esphome:
+  name: {name-here}
+  friendly_name: {Name Here}
+  platformio_options:
+    board_build.f_flash: 40000000L
+    board_build.flash_mode: dio
+    board_build.flash_size: 4MB
+    platform_packages:
+      - toolchain-riscv32-esp @ 8.4.0+2021r2-patch5
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: arduino
+    platform_version: 5.2.0
+
+bp5758d:
+  data_pin: GPIO19
+  clock_pin: GPIO18
+
+output:
+  - platform: bp5758d
+    id: output_blue
+    channel: 1
+    current: 15
+  - platform: bp5758d
+    id: output_green
+    channel: 2
+    current: 15
+  - platform: bp5758d
+    id: output_red
+    channel: 3
+    current: 15
+  - platform: bp5758d
+    id: output_white
+    channel: 4
+    current: 15
+
+light:
+  - platform: rgb
+    name: ${devicename} RGB
+    id: ${deviceid}_rgb
+    red: output_red
+    green: output_green
+    blue: output_blue
+  - platform: monochromatic
+    name: ${devicename} White
+    id: ${deviceid}_white
+    output: output_white
+
+logger:
+api:
+  encryption:
+    key: "Semob/lT5AuVISEKi60FwulGmpIWrPK29tdXx4pRsUk="
+
+ota:
+  - platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: nick-office-des Fallback Hotspot
+    password: "qCsp1EWEHgun"
+
+captive_portal:

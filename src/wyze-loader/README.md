@@ -3,7 +3,7 @@
 Minimal loader program bundled with ap-hijack which allows the user to backup flash, upload a new OTA image (replacing the wyze one), and switch OTA slots
 
 1. While not "brickable" if you flash re-exploitable Wyze or custom OTA-able images, you can get stuck in a state which can only be physically recovered if you upload good code without an OTA method.
-2. The partition layout is stuck to Wyze's. This is not ideal for Tasmota but you can get something running on it.
+2. The partition layout is stuck to Wyze's. This is not ideal for ESPHome but you can still generate an OTA image and upload it
 3. The Wi-fi AP will cause a brownout bootloop if you're running off of an incapable supply (like my FTDI) on the bench.
 
 NOTE: At the very least, you should add some mechanism to switch the OTA slot back to wyze-loader if you are developing custom firmware without an OTA framework.
@@ -23,8 +23,6 @@ NOTE: At the very least, you should add some mechanism to switch the OTA slot ba
 ## HTTP Endpoints
 
 If you want to automate this for whatever reason, everything is done via endpoints.
-
-If I can't get Tasmota to fit, I'll probably just add real local control here.
 
 | Method | Endpoint | Description |
 |---|---|---|

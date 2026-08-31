@@ -7,6 +7,12 @@ Wireless exploit for the Wyze WLPA19CV2 color bulb
 
 The Wyze Color WLPA19CV2 bulbs have a factory test mode which allows a custom OTA image to be flashed wirelessly through a specific sequence of power cycling.
 
+This project provides
+
+- An implementation and guide to obtain code execution
+- A loader to connect and manage the bulb
+- An ESPHome implementation for tying in to Home Assistant
+
 ## Usage
 
 *"To break the lock on this ESP32, we're going to use an ESP32"*
@@ -30,18 +36,20 @@ Success!
 
 The bulb now boots to the wyze-loader, which hosts an AP called wyze-loader_XXXXXX. Connect to this AP and navigate to [http://192.168.4.1](http://192.168.4.1).
 
-You can upload whatever partition-compatible firmware you would like. I plan to make a Tasmota variant.
+To set up with ESPHome, continue to [the ESPHome guide](src/esphome/README.md).
 
-## Why
+## The project
+
+### Why
 
 I bought these at Microcenter and don't like that you need the cloud for control with Home Assistant. I wanted to flash Tasmota but the board was different.
 
 Ironically, I started this to avoid spending half an hour soldering and instead wasted a weekend reverse engineering and developing.
 
-## How
+### How
 
 See [docs/METHODOLOGY.md](docs/METHODOLOGY.md)
 
-## Todo
+### Todo
 
 See [docs/TODO.md](docs/TODO.md)

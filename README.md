@@ -11,6 +11,10 @@ The Wyze Color WLPA19CV2 bulbs have a factory test mode which allows a custom OT
 
 *"To break the lock on this ESP32, we're going to use an ESP32"*
 
+### Demo
+[![Video demo](https://img.youtube.com/vi/nnfwuxv8h2U/0.jpg)](https://www.youtube.com/watch?v=nnfwuxv8h2U)
+
+
 1. Flash `wyze-hijack-ap` to an ESP32S3. Keep it powered on near the bulb.
     - Easy: [wyze-hijack-ap Web Flasher](https://nickdaria.github.io/wyze-bulb-color-pwned/)
     - Advanced: build from source, idf.py

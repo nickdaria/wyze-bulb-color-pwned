@@ -41,16 +41,12 @@ output:
     current: 15
 
 light:
-  - platform: rgb
-    name: ${devicename} RGB
-    id: ${deviceid}_rgb
+  - platform: rgbw
+    name: None
     red: output_red
     green: output_green
     blue: output_blue
-  - platform: monochromatic
-    name: ${devicename} White
-    id: ${deviceid}_white
-    output: output_white
+    white: output_white
 
 logger:
 api:

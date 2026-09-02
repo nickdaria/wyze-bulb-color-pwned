@@ -34,7 +34,7 @@ See [docs/DISASSEMBLY.md](../docs/DISASSEMBLY.md)
 
 If you know the ESP32(C3), you know what those pins mean. GPIO9/GPIO8 are your strapping pins read by the bootrom. TX/RX are your UART, EN is your RST, and 3V3/GND provide power.
 
-Unfortunately, you do need to assert that GPIO8. Without it, you will get into boot but it is strapped to talk via native CAN which isn't exposed.
+Unfortunately, you do need to assert that GPIO8. Without it, you will get into boot but it is strapped to talk via native USB which isn't exposed.
 
 ## Recon
 
